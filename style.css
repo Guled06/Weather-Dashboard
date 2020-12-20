@@ -1,0 +1,55 @@
+/* weather-card positioned so that the spinner may be absolutely positioned
+   relative to this weather-card */
+   .weather-card {
+    position: relative;
+  }
+  
+  #weather-icon {
+    height: 3.5rem;
+  }
+  
+  #weather-icon>img {
+    height: 100%;
+  }
+  
+  /* All children of the card should have opacity reduced when waiting for weather
+  data to load */
+  .weather-card > :not(.card-spinner) {
+    transition: opacity 300ms ease;
+  }
+  .card-loading > :not(.card-spinner) {
+    opacity: 0.3;
+  }
+  
+  .card-spinner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    
+    /* hide the element without using display none so that the transition is
+    smooth when it is displayed while content is loading */
+    transform: scale(0);
+    opacity: 0;
+    transition: all 200ms ease;
+  }
+  
+  .card-loading .card-spinner {
+    opacity: 1;
+    transform: none;
+  }
+
+  #searching {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: rgb(238, 227, 238);
+    font-weight: bold;
+
+  }
+  
+  body {
+    background-color: rgb(48, 3, 9);
+  }
