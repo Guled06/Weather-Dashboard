@@ -13,35 +13,35 @@
 <body>
     <div class="container pt-3">
         <h1 style="text-align: center; color: rgb(241, 233, 241);">Weather Dashboard</h1>
-        <hr class="border-top border-dark">
+        <hr class="border-top border-danger">
         <div class="row mt-5">
             <div class="col-md">
                 <div class="card mb-3">
                     <div class="card-body" style="background-color: rgb(60, 73, 75);">
                         <h2 class="card-title h4" style="color: rgb(216, 216, 210); text-align: center;">Cities</h2>
-                        <hr class="border-top border-dark">
-                        <h3 class="card-subtitle h6 mb-3" style="color: black;">Click on a city to view the weather</h3>
-                        <button data-city="San Diego" class="city btn btn-outline-success btn-block">
+                        <hr class="border-top border-primary">
+                        <h3 class="card-subtitle h6 mb-3" style="color: rgb(236, 238, 240);">Click on a city to view the weather</h3>
+                        <button data-city="San Diego" class="city btn btn-outline-danger btn-block">
                             San Diego
                         </button>
-                        <button data-city="San Francisco" class="city btn btn-outline-success btn-block">
+                        <button data-city="San Francisco" class="city btn btn-outline-danger btn-block">
                             San Francisco
                         </button>
-                        <button data-city="New York" class="city btn btn-outline-success btn-block">
+                        <button data-city="New York" class="city btn btn-outline-danger btn-block">
                             New York
                         </button>
-                        <button data-city="London" class="city btn btn-outline-success btn-block">
+                        <button data-city="London" class="city btn btn-outline-danger btn-block">
                             London
                         </button>
-                        <button data-city="Paris" class="city btn btn-outline-success btn-block">
+                        <button data-city="Paris" class="city btn btn-outline-danger btn-block">
                             Paris
                         </button>
                     </div>
                 </div>
-                <div class="card bg-light text-danger">
+                <div class="card bg-light text-primary">
                     <div class="card-body">
                         <h2 id="future" class="card-title h4" style="text-align: center;">Future Weather</h2>
-                        <hr class="border-top border-dark">
+                        <hr class="border-top border-danger">
                         <div id="future-icon"></div>
                         <p class="card-text">Future Temp (F): <span id="futureTemp">-</span></p>
                         <p class="card-text">Future Wind: <span id="futureWind">-</span></p>
@@ -53,7 +53,7 @@
                 <form id="search-form">
                     <div class="form-group">
                         <label for="search-input" id="searching">Search for a city</label>
-                        <hr class="border-top border-dark">
+                        <hr class="border-top border-primary">
                         <div class="input-group">
                             <input type="text" class="form-control" id="search-input" placeholder="e.g. Minneapolis">
                             <div class="input-group-append">
@@ -65,7 +65,7 @@
                 <div class="card weather-card bg-primary text-light mb-3">
                     <div class="card-body">
                         <h2 id="city-name" class="card-title h4" style="text-align: center;">Choose City</h2>
-                        <hr class="border-top border-dark">
+                        <hr class="border-top border-danger">
                         <div id="weather-icon"></div>
                         <p class="card-text">Current Temp (F): <span id="temp">-</span></p>
                         <p class="card-text">Wind: <span id="wind">-</span></p>

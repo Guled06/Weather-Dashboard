@@ -4,6 +4,10 @@ $(function () {
 
   
   function fetchWeatherForCity(city) {
+
+    // var queryUrl = "https://pro.openweathermap.org/data/2.5/forecast/hourly?q=" + city + "&units=imperial&appid=" + apiKey;
+
+
     var queryUrl =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
@@ -28,7 +32,6 @@ $(function () {
 
      
       $("#city-name").text(data.name + " Weather");
-      $("#future").text("Future " + data.name + " Weather");
 
       
 
@@ -47,9 +50,9 @@ $(function () {
       $("#wind").text(data.wind.speed + " mph");
       $("#humidity").text(data.main.humidity + " %");
 
-      $("#futureTemp").text(data.main.temp + "°");
-      $("#futureWind").text(data.wind.speed + " mph");
-      $("#futureHumidity").text(data.main.humidity + " %");
+      // $("#futureTemp").text(list.main.temp + "°");
+      // $("#futureWind").text(list.wind.speed + " mph");
+      // $("#futureHumidity").text(list.main.humidity + " %");
 
       $(".weather-card").removeClass("card-loading");
     });
