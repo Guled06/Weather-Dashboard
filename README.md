@@ -13,5 +13,5 @@ During my Coding Bootcamp at the UCSD Trilogy coding program, we were given assi
 <h3>You can visit my application at <a href="https://guled06.github.io/Weather-Dashboard/">Weather Dashboard</a>. Now, you can plan your week to with one click using this application!<h3>
 <br>
 
-<img src="imageweather/pictureONE.png" alt="">
+<img src="imageweather/picture1.png" alt="">
 
