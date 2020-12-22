@@ -12,4 +12,4 @@ During my Coding Bootcamp at the UCSD Trilogy coding program, we were given assi
 
 <p>This app will run in the broweser and feature dynamically updated HTML and CSS, powered by JQuery. I used a library called [Moment.js] (https://momentjs.com/) for setting the dates of the current weather forecast and the next five days forecast. The application has clean user interface styling. It is easy to get around it and it assists the user by pointing out to the user where to click to search.</p>
 
-<img src="images.pictureONE.png">
+<img src="./imageweather.pictureONE.png">
