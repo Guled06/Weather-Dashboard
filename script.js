@@ -158,5 +158,7 @@ $(function () {
     fetchWeatherForCity(city);
     fetchForecastForCity(search);
   });
+
+
 });
 
