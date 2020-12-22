@@ -18,7 +18,6 @@ $(function () {
       "&units=imperial&appid=" +
       apiKey;
       
-      
       $.ajax({
         url: queryUrl,
         method: "GET",

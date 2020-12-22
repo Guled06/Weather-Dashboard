@@ -13,27 +13,27 @@
 <body>
     <div class="container pt-3">
         <h1 style="text-align: center; color: rgb(187, 44, 8);">Weather Dashboard</h1>
-        <hr class="border-top border-danger">
+        <hr class="border-top border-dark">
         <div class="row mt-5">
             <div class="col-md-3">
                 <div class="card mb-3">
-                    <div class="card-body" style="background-color: rgb(194, 128, 231);">
-                        <h2 class="card-title h4" style="color: rgb(0, 0, 0); text-align: center;">Cities</h2>
+                    <div class="card-body" style="background-color: rgb(39, 83, 80);">
+                        <h2 class="card-title h4" style="color: black; text-align: center;">Cities</h2>
                         <hr class="border-top border-index">
-                        <h3 class="card-subtitle h6 mb-3" style="color: yellow; text-align: center;">Click on a city to view the weather</h3>
-                        <button data-city="San Diego" class="city btn btn-outline-danger btn-block" style="color: black;">
+                        <h3 class="card-subtitle h6 mb-3" style="color: rgb(223, 228, 235); text-align: center;">Click on a city to view the weather</h3>
+                        <button data-city="San Diego" class="city btn btn-outline-danger btn-block" style="color: white;">
                             San Diego
                         </button>
-                        <button data-city="Cape Town" class="city btn btn-outline-danger btn-block" style="color: black;">
+                        <button data-city="Cape Town" class="city btn btn-outline-danger btn-block" style="color: white;">
                             Cape Town
                         </button>
-                        <button data-city="New York" class="city btn btn-outline-danger btn-block" style="color: black;">
+                        <button data-city="New York" class="city btn btn-outline-danger btn-block" style="color: white;">
                             London
                         </button>
-                        <button data-city="Seattle" class="city btn btn-outline-danger btn-block" style="color: black;">
+                        <button data-city="Seattle" class="city btn btn-outline-danger btn-block" style="color: white;">
                             Seattle
                         </button>
-                        <button data-city="Rio De Janeiro" class="city btn btn-outline-danger btn-block" style="color: black;">
+                        <button data-city="Rio De Janeiro" class="city btn btn-outline-danger btn-block" style="color: white;">
                             Rio De Janeiro
                         </button>
                     </div>
@@ -54,7 +54,7 @@
             <div class="col-md-9">
                 <div class="card weather-card bg-primary text-light mb-3">
                     <div class="card-body">
-                        <h2 id="city-name" class="card-title h4" style="text-align: center; color: black;">Look Up A City</h2>
+                        <h2 id="city-name" class="card-title h4" style="text-align: center; color: black;">Search A City</h2>
                         <hr class="border-top border-index">
                         <div id="weather-icon"></div>
                         <p class="card-text">Current Temp (F): <span id="temp">-</span></p>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div><h1 style="color:black;">5-Day Forecast:</h1></div>
+                <div><h2 style="color:black;">5-Day Forecast:</h2></div>
                 <div class="row">
                     <div class="col-md">
                         <div class="card weather-card bg-primary text-light mb-3">
