@@ -12,6 +12,14 @@ $(function () {
       "&units=imperial&appid=" +
       apiKey;
 
+    $(".weather-card").addClass("card-loading");
+
+    var queryUrl =
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      city +
+      "&units=imperial&appid=" +
+      apiKey;
+
     $.ajax({
       url: queryUrl,
       method: "GET",
@@ -35,12 +43,23 @@ $(function () {
       $("#wind").text(data.wind.speed + " mph");
       $("#humidity").text(data.main.humidity + " %");
 
+      $(".weather-card").removeClass("card-loading");
+
     });
   }
+    
 
   function fetchForecastForCity (search) {
+
+    var queryUrl =
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
+    search +
+    "&units=imperial&appid=" +
+    apiKey;
     
     $(".forecast-card").empty();
+
+    $(".forecast-card").addClass("card-loading");
   
     var queryUrl =
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
@@ -57,31 +76,25 @@ $(function () {
       var dayOne = (data.list[0]);
       var dayOneDate = moment().add(1, "days").format("M/D/YYYY");
       var tempP = $("<p>").text("Temp: " + dayOne.main.temp + "°");
-      var humidityP  = $("<p>").text("Humidity: " + dayOne.main.humidity + " %");
+      var humidityP  = $("<p>").text("Humidity: " + dayOne.main.humidity + "%");
       
       $("#dayOne").append(dayOneDate);
       $("#dayOne").append(tempP);
       $("#dayOne").append(humidityP);
-    
-
-
       
       var dayTwo = (data.list[8]);
       var dayTwoDate = moment().add(2, "days").format("M/D/YYYY");
       var tempP = $("<p>").text("Temp: " + dayTwo.main.temp + "°");
-      var humidityP  = $("<p>").text("Humidity: " + dayTwo.main.humidity + " %");
-
+      var humidityP  = $("<p>").text("Humidity: " + dayTwo.main.humidity + "%");
 
       $("#dayTwo").append(dayTwoDate);
       $("#dayTwo").append(tempP);
       $("#dayTwo").append(humidityP);
 
-
-
       var dayThree = (data.list[16]);
       var dayThreeDate = moment().add(3, "days").format("M/D/YYYY");
       var tempP = $("<p>").text("Temp: " + dayThree.main.temp + "°");
-      var humidityP  = $("<p>").text("Humidity: " + dayThree.main.humidity + " %");
+      var humidityP  = $("<p>").text("Humidity: " + dayThree.main.humidity + "%");
 
       $("#dayThree").append(dayThreeDate);
       $("#dayThree").append(tempP);
@@ -90,8 +103,8 @@ $(function () {
 
       var dayFour = (data.list[24]);
       var dayFourDate = moment().add(4, "days").format("M/D/YYYY");
-      var tempP = $("<p>").text("Temp: " + dayFour.main.temp + " °");
-      var humidityP  = $("<p>").text("Humidity: " + dayFour.main.humidity + " %");
+      var tempP = $("<p>").text("Temp: " + dayFour.main.temp + "°");
+      var humidityP  = $("<p>").text("Humidity: " + dayFour.main.humidity + "%");
       
       $("#dayFour").append(dayFourDate);
       $("#dayFour").append(tempP);
@@ -100,13 +113,15 @@ $(function () {
       var dayFive = (data.list[32]);
       // var dayFiveIcon = data.list[32].weather[0].icon;
       var dayFiveDate = moment().add(5, "days").format("M/D/YYYY");
-      var tempP = $("<p>").text("Temp: " + dayFive.main.temp + " °");
-      var humidityP  = $("<p>").text("Humidity: " + dayFive.main.humidity + " %");
+      var tempP = $("<p>").text("Temp: " + dayFive.main.temp + "°");
+      var humidityP  = $("<p>").text("Humidity: " + dayFive.main.humidity + "%");
 
       // $("#dayFive").append(dayFiveIcon);
       $("#dayFive").append(dayFiveDate);
       $("#dayFive").append(tempP);
       $("#dayFive").append(humidityP);
+
+      $(".forecast-card").removeClass("card-loading");
 
     });
   }

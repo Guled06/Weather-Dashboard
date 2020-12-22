@@ -11,8 +11,6 @@
     height: 100%;
   }
   
-  /* /* All children of the card should have opacity reduced when waiting for weather
-  data to load */
   .weather-card > :not(.card-spinner) {
     transition: opacity 300ms ease;
   }
@@ -28,8 +26,6 @@
     left: 0;
   
     
-    /* hide the element without using display none so that the transition is
-    smooth when it is displayed while content is loading */
     transform: scale(0);
     opacity: 0;
     transition: all 200ms ease;
@@ -44,11 +40,11 @@
 
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
-    color: rgb(238, 227, 238);
+    color: black;
     font-weight: bold;
 
   }
   
   body {
-    background-color: rgb(100, 83, 6);
+    background-color: rgb(204, 210, 211);
   }
