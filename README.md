@@ -13,7 +13,7 @@ During my Coding Bootcamp at the UCSD Trilogy coding program, we were given assi
 <p>This app will run in the broweser and feature dynamically updated HTML and CSS, powered by JQuery. I used a library called [Moment.js] (https://momentjs.com/) for setting the dates of the current weather forecast and the next five days forecast. The application has clean user interface styling. It is easy to get around it and it assists the user by pointing out to the user where to click to search.</p>
 <br>
 
-<h3>You can visit my application at <link rel="stylesheet" href="https://guled06.github.io/Weather-Dashboard/">Weather Dashboard. Now, you can plan your week efficiently.<h3>
+<h3>You can visit my application at <a href="https://guled06.github.io/Weather-Dashboard/">Weather Dashboard</a>. You can now plan your week to with one click!  <h3>
 
 <img src="imageweather/pictureONE.png" alt="">
 
