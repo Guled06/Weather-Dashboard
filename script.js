@@ -37,7 +37,6 @@ $(function () {
       
       $("#weather-icon").empty().append(iconImg);
       
-
       $("#temp").text(data.main.temp + "°");
       $("#wind").text(data.wind.speed + " mph");
       $("#humidity").text(data.main.humidity + " %");
@@ -47,7 +46,6 @@ $(function () {
     });
   }
     
-
   function fetchForecastForCity (search) {
 
     var queryUrl =
@@ -136,7 +134,6 @@ $(function () {
     });
   }
 
-
   $(document).on("click", ".city", function () {
     
     var city = $(this).attr("data-city");
@@ -153,7 +150,6 @@ $(function () {
 
     var city = $("#search-input").val().trim();
     var search = $("#search-input").val().trim();
-
 
     if (city === "") {
       return;
