@@ -118,7 +118,7 @@ $(function () {
       $("#dayFour").append(humidityP);
 
       var dayFive = (data.list[32]);
-      var dayFiveIcon = data.list[16].weather[0].icon;
+      var dayFiveIcon = data.list[32].weather[0].icon;
       var dayFiveImg = $("<img>").attr("src", "http://openweathermap.org/img/w/" + dayFiveIcon + ".png");
       var dayFiveDate = moment().add(5, "days").format("M/D/YYYY");
       var tempP = $("<p>").text("Temp: " + dayFive.main.temp + "°");
